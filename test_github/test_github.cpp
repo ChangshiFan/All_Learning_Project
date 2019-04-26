@@ -1,13 +1,13 @@
-#include "Add.h"
+#include "get.h"
 #include <iostream>
 
 int main(){
 
     int a = 2, b = 5, d;
 
-    Add tmp;
-    d = tmp.AddNum(a, b);
-    std::cout << "AddNum:" << d << std::endl;
+    Get tmp;
+    d = tmp.square(a, b);
+    std::cout << "square:" << d << std::endl;
     system("pause");
     return 0;
 }

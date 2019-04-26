@@ -1,9 +1,11 @@
 SOURCES += \
     Add.cpp \
-    test_github.cpp
+    test_github.cpp \
+    get.cpp
 
 HEADERS += \
-    Add.h
+    Add.h \
+    get.h
 
 QT += widgets
 
