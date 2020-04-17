@@ -1,9 +1,9 @@
 ﻿cmake_minimum_required(VERSION 3.5.0)
-PROJECT(string_class)
+PROJECT(cv_test)
 ADD_COMPILE_OPTIONS(-std=c++14)
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
-#FIND_PACKAGE(OpenCV)
+FIND_PACKAGE(OpenCV)
 
 ## include
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/include)
@@ -15,8 +15,8 @@ AUX_SOURCE_DIRECTORY(src SRC_DIR)
 
 SET(DEMO_SRC ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
-ADD_EXECUTABLE(string_class ${DEMO_SRC} ${SRC_DIR})
+ADD_EXECUTABLE(cv_test ${DEMO_SRC} ${SRC_DIR})
 
-#LINK_DIRECTORIES(${OpenCV_LIBRARY_DIRS})
+LINK_DIRECTORIES(${OpenCV_LIBRARY_DIRS})
 
-#TARGET_LINK_LIBRARIES(string_class opencv_core opencv_videoio opencv_highgui opencv_imgproc)
+TARGET_LINK_LIBRARIES(cv_test opencv_core opencv_videoio opencv_highgui opencv_imgproc)

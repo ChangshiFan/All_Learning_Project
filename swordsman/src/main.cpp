@@ -2,10 +2,8 @@
  * i'm new, just for testing C plus plus.
  * include inherit, multi state, multi thread
  *
- * author: chance
+ * author: Leo Fan
  * time  : 2019 12 23 18:40
- *
- *
  */
 #include <iostream>
 #include <memory>
@@ -24,6 +22,7 @@ int main()
   shared_ptr<PiXieJianFa> pxjf(new PiXieJianFa("P X J F", 90));
   LingHuChong linghu(dgjj.get(), "LingHu", 24, 99);
   linghu.lprint();
+  linghu.Testing();
   YueBuQun buqun(pxjf.get(), "BuQun", 50, 50);
   buqun.yprint();
 

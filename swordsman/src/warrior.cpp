@@ -16,6 +16,11 @@ void DaXia::setSelfAge(int age)
   self_age_ = age;
 }
 
+void DaXia::Testing()
+{
+ std::cout << "working here !!!!" << std::endl;
+}
+
 LingHuChong::LingHuChong(JianFa *jf, std::string name, int age, int talent)
   :DaXia( name, age, talent), jf_(jf)
 {

@@ -14,6 +14,7 @@ public:
   std::string getSelfName() const{return self_name_;}
   int getSelfAge() const{return self_age_;}
   int getTalent() const{return talent_;}
+  void Testing();
 private:
   int talent_;
   std::string self_name_;
