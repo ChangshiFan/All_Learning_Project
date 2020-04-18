@@ -1,13 +1,13 @@
 # Learning Project
-Just for Testing C++
+Testing C++
 
 
 # The project has Done
 
-## Swordsman
+## swordsman
 
 ## string
 
-
+## sort
 
 others projects is processing

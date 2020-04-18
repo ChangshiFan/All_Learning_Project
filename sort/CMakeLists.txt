@@ -11,16 +11,14 @@ INCLUDE_DIRECTORIES(usr/local/include)
 #INCLUDE_DIRECTORIES(${OpenCV_INCLUDE_DIRS})
 
 ## src
-#AUX_SOURCE_DIRECTORY(src SRC_DIR)
-SET(SRC_DIR
-  ${PROJECT_SOURCE_DIR}/src/sort.cpp
-  )
+AUX_SOURCE_DIRECTORY(src SRC_DIR)
+SET(MAIN_DIR ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
 #add_library(sortlib ${SRC_DIR})
 #target_link_libraries(sortlib)
 
 
-ADD_EXECUTABLE(sort ${PROJECT_SOURCE_DIR}/src/sort.cpp ${PROJECT_SOURCE_DIR}/src/main.cpp)
+ADD_EXECUTABLE(sort ${SRC_DIR} ${MAIN_DIR})
 
 #LINK_DIRECTORIES(${OpenCV_LIBRARY_DIRS})
 
