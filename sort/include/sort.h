@@ -26,8 +26,8 @@ public:
   void QuickSort(int low, int high);//快速排序
   int GetIndex(int low, int high);//快排获取标志位
   void InsertSort();//插入排序
-  void MergeSort(int start, int end);//TODO归并排序
-  void Merge(int start, int middle, int end);//TODO合并区间
+  void MergeSort(int start, int end);//归并排序
+  void Merge(int start, int middle, int end);//合并区间
   void StackSort();//TODO堆排序
   void Display();
 
